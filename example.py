@@ -29,6 +29,6 @@ def swish(x, beta = 1):
 get_custom_objects().update({'swish': Swish(swish)})
 
 if __name__ == '__main__':
-    model = keras.models.load_model('./EfficientCovidNetB0-500.hdf5')
+    model = keras.models.load_model('./models/EfficientCovidNet-500.hdf5')
     img = np.zeros(shape=(1, 500, 500, 3))
     prediction = model.predict(img)
